@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simran Shariff | AI & Data Science Portfolio</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Simran Shariff - Artificial Intelligence & Data Science Student. Explore ML/DL projects, achievements, skills, and certifications.">
+    <meta name="keywords" content="Simran Shariff, AI Student, Data Scientist, Machine Learning, Portfolio, Web Developer, Python">
+    <meta name="author" content="Simran Shariff">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Scroll Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom Style CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="loader-circle"></div>
+            <div class="loader-circle-inner"></div>
+            <span class="loader-text">SIMRAN SHARIFF</span>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- Animated Particle Canvas Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-accent">&lt;</span>Simran<span class="logo-accent">.</span>DS<span class="logo-accent">/&gt;</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#resume" class="nav-link">Resume</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        
+        <!-- 1. Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="section-container hero-grid">
+                <div class="hero-info" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="greeting-badge">
+                        <span class="ping-dot"></span>
+                        Welcome to my digital space
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Simran Shariff</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        Artificial Intelligence & Data Science Student
+                    </h2>
+                    <p class="hero-tagline">
+                        <i class="fa-solid fa-terminal prompt-icon"></i>
+                        <span class="static-txt">I am a </span>
+                        <span class="typing-text" id="typed-text"></span>
+                        <span class="cursor">&nbsp;</span>
+                    </p>
+                    <p class="hero-desc">
+                        Turning Data into Intelligent Solutions. Dedicated to creating high-performance predictive systems and smart web applications.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary hover-glow">
+                            <span>View Portfolio</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="assets/resume.pdf" download class="btn btn-secondary">
+                            <span>Download Resume</span>
+                            <i class="fa-solid fa-download"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Contact Me</span>
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual" data-aos="zoom-in" data-aos-duration="1200">
+                    <div class="avatar-wrapper">
+                        <div class="avatar-ring ring-1"></div>
+                        <div class="avatar-ring ring-2"></div>
+                        <div class="avatar-container">
+                            <img src="assets/avatar.jpg" alt="Simran Shariff Profile Photo" class="avatar-img">
+                        </div>
+                        <div class="floating-badge fb-1">
+                            <i class="fa-brands fa-python text-python"></i>
+                        </div>
+                        <div class="floating-badge fb-2">
+                            <i class="fa-solid fa-brain text-ai"></i>
+                        </div>
+                        <div class="floating-badge fb-3">
+                            <i class="fa-solid fa-database text-data"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+                <span class="mouse-icon">
+                    <span class="scroll-wheel"></span>
+                </span>
+            </a>
+        </section>
+
+        <!-- 2. About Me Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="section-container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Who I Am</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-content" data-aos="fade-right" data-aos-delay="200">
+                        <p class="about-text">
+                            I am a motivated and detail-oriented engineering student at <strong>Maharaja Institute of Technology Thandavapura</strong>, Mysuru, with strong technical expertise in <strong>Python, C, Java, and AIML</strong>. I am recognized as a fast learner with leadership qualities, a collaborative mindset, and an adaptive nature.
+                        </p>
+                        <p class="about-text">
+                            I have hands-on training developing intelligent predictive systems and cloud solutions. I enjoy solving real-world problems through technology and am driven to contribute to organizational success while continually advancing my technical and professional skillsets.
+                        </p>
+                        
+                        <div class="stat-cards-grid">
+                            <div class="stat-card glass-card">
+                                <span class="stat-num gradient-text">8.7</span>
+                                <span class="stat-lbl">CGPA Academic Standing</span>
+                            </div>
+                            <div class="stat-card glass-card">
+                                <span class="stat-num gradient-text">5+</span>
+                                <span class="stat-lbl">AI & ML Projects Built</span>
+                            </div>
+                            <div class="stat-card glass-card">
+                                <span class="stat-num gradient-text">4+</span>
+                                <span class="stat-lbl">Industry Certifications</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-details-card glass-card" data-aos="fade-left" data-aos-delay="400">
+                        <h3>Domain Focus</h3>
+                        <ul class="focus-list">
+                            <li>
+                                <div class="focus-icon-container"><i class="fa-solid fa-brain"></i></div>
+                                <div>
+                                    <h4>Predictive Modeling</h4>
+                                    <p>Building classifiers and regression agents using Scikit-Learn.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="focus-icon-container"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                                <div>
+                                    <h4>Data Wrangling & Analysis</h4>
+                                    <p>Extracting, cleaning, and visualizing trends using Pandas & Matplotlib.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="focus-icon-container"><i class="fa-solid fa-code"></i></div>
+                                <div>
+                                    <h4>Modern Front-End Integration</h4>
+                                    <p>Connecting predictive endpoints to beautiful web interfaces.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Achievements Section -->
+        <section id="achievements" class="achievements-section section-padding">
+            <div class="section-container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Milestones</span>
+                    <h2 class="section-title">Achievements</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="achievements-grid">
+                    <!-- Achievement 1 -->
+                    <div class="achievement-card glass-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="card-glow"></div>
+                        <div class="ach-icon"><i class="fa-solid fa-users-gear"></i></div>
+                        <h3>Class Coordinator</h3>
+                        <p>Elected representative responsible for managing communications, organizing academic events, and bridging student-faculty interaction.</p>
+                    </div>
+
+                    <!-- Achievement 2 -->
+                    <div class="achievement-card glass-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="card-glow"></div>
+                        <div class="ach-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h3>CGPA: 8.7</h3>
+                        <p>Maintained a high academic standard throughout the Bachelor of Engineering curriculum in Artificial Intelligence & Data Science.</p>
+                    </div>
+
+                    <!-- Achievement 3 -->
+                    <div class="achievement-card glass-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="card-glow"></div>
+                        <div class="ach-icon"><i class="fa-solid fa-people-group"></i></div>
+                        <h3>Active Team Member</h3>
+                        <p>Collaborated dynamically in technical group projects, hackathons, and classroom laboratory assignments to build functional prototypes.</p>
+                    </div>
+
+                    <!-- Achievement 4 -->
+                    <div class="achievement-card glass-card" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="card-glow"></div>
+                        <div class="ach-icon"><i class="fa-solid fa-microchip"></i></div>
+                        <h3>Participated in Technical Events</h3>
+                        <p>Engaged in college hackathons, technical paper presentations, and machine learning workshops to keep skillsets cutting-edge.</p>
+                    </div>
+
+                    <!-- Achievement 5 -->
+                    <div class="achievement-card glass-card" data-aos="zoom-in" data-aos-delay="500">
+                        <div class="card-glow"></div>
+                        <div class="ach-icon"><i class="fa-solid fa-award"></i></div>
+                        <h3>Good Leadership Skills</h3>
+                        <p>Demonstrated ability to drive initiatives, resolve conflicts, manage timelines, and guide teams towards project completion.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Skills Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="section-container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Competencies</span>
+                    <h2 class="section-title">My Skills</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="skills-wrapper">
+                    <!-- Programming -->
+                    <div class="skills-category glass-card" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="category-title"><i class="fa-solid fa-code-branch text-python"></i> Programming</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Python</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>C Programming</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Java</span>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" data-width="75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>SQL</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>HTML / CSS</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>JavaScript</span>
+                                    <span class="skill-percent">70%</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" data-width="70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI & Data Science -->
+                    <div class="skills-category glass-card" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="category-title"><i class="fa-solid fa-brain text-ai"></i> AI & Data Science</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Artificial Intelligence & Machine Learning (AIML)</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Amazon Web Services (AWS)</span>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" data-width="75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Data Analysis</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Pandas & NumPy</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Scikit-Learn</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Deep Learning (TensorFlow)</span>
+                                    <span class="skill-percent">70%</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" data-width="70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skills-category glass-card" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="category-title"><i class="fa-solid fa-screwdriver-wrench text-data"></i> Developer Tools</h3>
+                        <div class="skills-list flex-tools">
+                            <div class="tool-tag glass-card">
+                                <i class="fa-solid fa-code text-ai"></i>
+                                <span>VS Code</span>
+                            </div>
+                            <div class="tool-tag glass-card">
+                                <i class="fa-brands fa-github"></i>
+                                <span>GitHub</span>
+                            </div>
+                            <div class="tool-tag glass-card">
+                                <i class="fa-solid fa-cloud text-python"></i>
+                                <span>Google Colab</span>
+                            </div>
+                            <div class="tool-tag glass-card">
+                                <i class="fa-solid fa-book-open text-data"></i>
+                                <span>Jupyter Notebook</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Education Section -->
+        <section id="education" class="education-section section-padding">
+            <div class="section-container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Learning Journey</span>
+                    <h2 class="section-title">Education</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Education 1 -->
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">Jul 2023 - Present</span>
+                            <h3>Bachelor of Engineering</h3>
+                            <h4 class="gradient-text">Artificial Intelligence & Machine Learning (AIML)</h4>
+                            <p class="timeline-inst">Maharaja Institute of Technology Thandavapura, Mysuru</p>
+                            <p class="timeline-desc">Extensive academic focus on foundational computer science, machine learning models, neural networks, algorithmic analysis, data structures, and database management systems.</p>
+                            <div class="timeline-badge">CGPA: 8.7</div>
+                        </div>
+                    </div>
+
+                    <!-- Education 2 -->
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">May 2021 - Apr 2023</span>
+                            <h3>12th Grade / PUC (Pre-University College)</h3>
+                            <h4 class="gradient-text">PCMC (Physics, Chemistry, Mathematics, Computer Science)</h4>
+                            <p class="timeline-inst">JSS Women's PU College, Chamarajanagar</p>
+                            <p class="timeline-desc">Completed senior secondary school focusing on fundamental science, mathematics, and programming logic.</p>
+                        </div>
+                    </div>
+
+                    <!-- Education 3 -->
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">Jun 2014 - Apr 2021</span>
+                            <h3>10th Grade / Secondary School (SSLC)</h3>
+                            <h4 class="gradient-text">General Secondary Education</h4>
+                            <p class="timeline-inst">Crescent Academy, Chamarajanagar</p>
+                            <p class="timeline-desc">Primary and secondary school coursework building foundations in science, mathematics, languages, and social disciplines.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="section-container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">My Work</span>
+                    <h2 class="section-title">Projects</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-img-placeholder">
+                            <i class="fa-solid fa-house-laptop project-bg-icon"></i>
+                            <div class="project-overlay">
+                                <span class="project-category">AI / Healthcare</span>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>AI Family Health Tracker</h3>
+                            <p class="project-desc">Designed an intelligent dashboard tracking physiological metrics for family members. Features customized threshold alerts and automated health risk diagnostics based on medical models.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>AIML</span>
+                                <span>Pandas</span>
+                                <span>Scikit-Learn</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/SimranShariff" target="_blank" rel="noopener noreferrer" class="btn-project-link github-btn"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="#" class="btn-project-link demo-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-img-placeholder">
+                            <i class="fa-solid fa-heart-pulse project-bg-icon"></i>
+                            <div class="project-overlay">
+                                <span class="project-category">Machine Learning</span>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>AI Thyroid Detector</h3>
+                            <p class="project-desc">Developed an advanced diagnostic classifier using clinical patient parameters to detect and flag thyroid disorders. Focuses on high precision recall metrics and feature analysis.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Machine Learning</span>
+                                <span>Pandas</span>
+                                <span>Seaborn</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/SimranShariff" target="_blank" rel="noopener noreferrer" class="btn-project-link github-btn"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="#" class="btn-project-link demo-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-img-placeholder">
+                            <i class="fa-solid fa-wind project-bg-icon"></i>
+                            <div class="project-overlay">
+                                <span class="project-category">AIML / Environment</span>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>Air Quality Monitoring System</h3>
+                            <p class="project-desc">Implemented a predictive atmospheric agent evaluating and mapping air purity logs across target cities using Air Quality Index (AQI) thresholds and regression algorithms.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>AIML</span>
+                                <span>NumPy</span>
+                                <span>Matplotlib</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/SimranShariff" target="_blank" rel="noopener noreferrer" class="btn-project-link github-btn"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="#" class="btn-project-link demo-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="project-img-placeholder">
+                            <i class="fa-solid fa-chart-line project-bg-icon"></i>
+                            <div class="project-overlay">
+                                <span class="project-category">Machine Learning</span>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>AIML Predictive Models</h3>
+                            <p class="project-desc">Constructed supervised regression agents focusing on price forecasts (Diamond & House prices). Features rigorous exploratory data analysis, outlier cleaning, and feature engineering.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Scikit-Learn</span>
+                                <span>Pandas</span>
+                                <span>Regression</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/SimranShariff" target="_blank" rel="noopener noreferrer" class="btn-project-link github-btn"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="#" class="btn-project-link demo-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="project-img-placeholder">
+                            <i class="fa-solid fa-globe project-bg-icon"></i>
+                            <div class="project-overlay">
+                                <span class="project-category">Web Development</span>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>AI Portfolio Website</h3>
+                            <p class="project-desc">A premium frontend portfolio designed to highlight credentials using interactive animations, custom canvas particles, custom mouse cursor tracks, and glassmorphic UI cards.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>Vanilla JS</span>
+                                <span>AOS Lib</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/SimranShariff" target="_blank" rel="noopener noreferrer" class="btn-project-link github-btn"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="#" class="btn-project-link demo-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Certifications Section -->
+        <section id="certifications" class="certifications-section section-padding">
+            <div class="section-container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Validation</span>
+                    <h2 class="section-title">Certifications</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="certifications-grid">
+                    <!-- Certificate 1 -->
+                    <div class="cert-card glass-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="cert-icon-wrapper"><i class="fa-solid fa-brain text-ai"></i></div>
+                        <h3>IBM AI Certification</h3>
+                        <p class="cert-issuer">IBM</p>
+                        <p class="cert-desc">Comprehensive validation covering neural networks, deep learning paradigms, cognitive analytics, and practical AI application logic.</p>
+                    </div>
+
+                    <!-- Certificate 2 -->
+                    <div class="cert-card glass-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="cert-icon-wrapper"><i class="fa-brands fa-aws text-python"></i></div>
+                        <h3>AWS CloudWatch & Audit</h3>
+                        <p class="cert-issuer">Amazon Web Services (AWS)</p>
+                        <p class="cert-desc">Hands-on auditing validation covering cloud infrastructure monitoring, AWS resource logging, analytics, and operational metrics.</p>
+                    </div>
+
+                    <!-- Certificate 3 -->
+                    <div class="cert-card glass-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="cert-icon-wrapper"><i class="fa-brands fa-python text-python"></i></div>
+                        <h3>Python & AI Technical Training</h3>
+                        <p class="cert-issuer">Technical Training Partner</p>
+                        <p class="cert-desc">Intense coding specialization covering object-oriented Python, machine learning workflows, predictive intelligence, and dataset parsing.</p>
+                    </div>
+
+                    <!-- Certificate 4 -->
+                    <div class="cert-card glass-card" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="cert-icon-wrapper"><i class="fa-solid fa-code text-data"></i></div>
+                        <h3>C-Programming Basics</h3>
+                        <p class="cert-issuer">Infosys Springboard</p>
+                        <p class="cert-desc">Certification covering basic programming paradigms, sorting algorithms, memory allocation structures, and structural pointers in C.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Experience Section -->
+        <section id="experience" class="experience-section section-padding">
+            <div class="section-container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Roles & Responsibilities</span>
+                    <h2 class="section-title">Experience</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="experience-timeline">
+                    <div class="exp-card glass-card" data-aos="fade-up">
+                        <div class="exp-header">
+                            <div class="exp-title-group">
+                                <h3>Class Coordinator</h3>
+                                <h4 class="gradient-text">Student Leadership Council</h4>
+                            </div>
+                            <span class="exp-duration">2024 - Present</span>
+                        </div>
+                        <ul class="exp-details">
+                            <li><i class="fa-solid fa-chevron-right bullet-icon"></i> Managed classroom activities, communication, teamwork, and event coordination.</li>
+                            <li><i class="fa-solid fa-chevron-right bullet-icon"></i> Enhanced direct channels of communication between the student body and university department chairs.</li>
+                            <li><i class="fa-solid fa-chevron-right bullet-icon"></i> Fostered teamwork in planning and coordinating technical workshops, industrial visits, and guest lectures.</li>
+                            <li><i class="fa-solid fa-chevron-right bullet-icon"></i> Supported fellow classmates during academic projects by helping resolve bottlenecks and coordinating reviews.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Resume Section -->
+        <section id="resume" class="resume-section section-padding">
+            <div class="section-container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Curriculum Vitae</span>
+                    <h2 class="section-title">Resume</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="resume-viewer-container" data-aos="fade-up" data-aos-delay="200">
+                    <!-- Desktop Window Preview -->
+                    <div class="resume-window glass-card">
+                        <div class="resume-window-header">
+                            <div class="window-controls">
+                                <span class="control-dot red"></span>
+                                <span class="control-dot yellow"></span>
+                                <span class="control-dot green"></span>
+                            </div>
+                            <span class="window-title">simran_shariff_resume.pdf</span>
+                            <div class="window-actions">
+                                <span class="window-size">427 KB</span>
+                                <a href="assets/resume.pdf" download class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">
+                                    <i class="fa-solid fa-download"></i> Download
+                                </a>
+                            </div>
+                        </div>
+                        <iframe src="assets/resume.pdf#toolbar=0" class="resume-iframe" title="Simran Shariff Resume Preview"></iframe>
+                    </div>
+
+                    <!-- Mobile View Alternate -->
+                    <div class="resume-mobile-card glass-card">
+                        <div class="resume-mobile-icon">
+                            <i class="fa-solid fa-file-pdf"></i>
+                        </div>
+                        <h3>Simran Shariff Resume</h3>
+                        <p>View or download my full professional resume to explore my educational background, core skills, certifications, and academic work.</p>
+                        <a href="assets/resume.pdf" download class="btn btn-primary hover-glow">
+                            <span>Download Resume</span>
+                            <i class="fa-solid fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="section-container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Let's Connect</span>
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info-panel" data-aos="fade-right" data-aos-delay="200">
+                        <h3>Get in Touch</h3>
+                        <p class="contact-subtext">Have a problem to solve or want to build something intelligent together? Feel free to reach out using the form or direct coordinates.</p>
+                        
+                        <ul class="contact-details-list">
+                            <li>
+                                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="contact-meta">
+                                    <span class="contact-label">Email</span>
+                                    <a href="mailto:simranshariff1103@gmail.com" class="contact-value">simranshariff1103@gmail.com</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="contact-meta">
+                                    <span class="contact-label">Phone</span>
+                                    <a href="tel:+918073565448" class="contact-value">+91 80735 65448</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="contact-meta">
+                                    <span class="contact-label">Location</span>
+                                    <span class="contact-value">Karnataka, India</span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="social-links-container">
+                            <a href="https://github.com/SimranShariff" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="GitHub Profile">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/simran-shariff" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="LinkedIn Profile">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container glass-card" data-aos="fade-left" data-aos-delay="400">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="form-name">Name</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-user input-icon"></i>
+                                    <input type="text" id="form-name" name="name" placeholder="John Doe" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Email</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-envelope input-icon"></i>
+                                    <input type="email" id="form-email" name="email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <div class="input-wrapper text-area-wrapper">
+                                    <i class="fa-solid fa-message input-icon"></i>
+                                    <textarea id="form-message" name="message" rows="5" placeholder="Hi Simran, let's collaborate on..." required></textarea>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-submit hover-glow">
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                        
+                        <!-- Success Modal Feedback -->
+                        <div id="form-feedback" class="form-feedback hidden">
+                            <div class="feedback-icon"><i class="fa-solid fa-circle-check"></i></div>
+                            <h3>Message Sent!</h3>
+                            <p>Thank you for reaching out. I'll get back to you shortly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- 10. Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-copyright">Designed & Developed by Simran Shariff &copy; 2026</p>
+            <p class="footer-subtitle">Turning Data into Intelligent Solutions.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll-to-top button -->
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- AOS Scroll Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
