@@ -1971,3 +1971,36 @@ input, textarea, button {
     .fb-2 { right: -15px; }
     .fb-3 { bottom: -10px; }
 }
+@media (max-width: 768px) {
+
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
